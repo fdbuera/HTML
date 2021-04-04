@@ -1,2 +1,2 @@
-# html.github.io
+# HTML
 Useful command for HTML
