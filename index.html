@@ -1,224 +1,238 @@
-HTML
-Contenido
-Organiza en bloques o secciones de contenido dentro del <body>. Es importante para la accesibilidad y el SEO que estos elementos se identifiquen con el objetivo o la estructura de ese contenido.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML BY FDB</title>
+</head>
+<body>
+	<header>
+        <nav>
+            <div style="color:darkcyan"><h2>html</h2></div>
+            <h3>Contenido</h3>
+            <p>Organiza en bloques o secciones de contenido dentro del &lt;body&gt;. Es importante para la accesibilidad y el SEO que estos elementos se identifiquen con el objetivo o la estructura de ese contenido.</p>
+        </nav>
+    </header>
+    <main>
+        <a style="background-color:whitesmoke;"><strong>&lt;div&gt;</strong></a><br>
+        <p>Sirve para crear secciones o agrupar contenidos.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;div style="color: blue;"&gt;
+            &lt;h2&gt;Ejemplo de div y span&lt;/h2&gt;	
+            &lt;p>&gt;
+            Esto es un párrafo dentro de un div,
+            &lt;span style="color: red;"&gt; y esto un span dentro de un párrafo.&lt;/span&gt;	 
+            &lt;/p&gt;	
+        &lt;/div&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;h&gt;</strong></a>
+        <p>Los elementos de encabezado implementan seis niveles de encabezado del documento, &lt;h1&gt; es el más importante, y &lt;h6&gt;, el menos importante.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;h1&gt;Heading level 1&lt;/h1&gt;
+        &lt;h2&gt;Heading level 2&lt;/h2&gt;
+        &lt;h3&gt;Heading level 3&lt;/h3&gt;
+        &lt;h4&gt;Heading level 4&lt;/h4&gt;
+        &lt;h5&gt;Heading level 5&lt;/h5&gt;
+        &lt;h6&gt;Heading level 6&lt;/h6&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;dl&gt;</strong></a>
+        <p>Representa una lista descriptiva. El elemento encierra una lista de grupos de términos (especificados con el uso del elemento &lt;dt&gt;) y de descripciones (proveídas con elementos &lt;dd&gt;). Algunos usos comunes para este elemento son implementar un glosario o para desplegar metadatos (lista de pares llave-valor).</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;dl&gt;
+            &lt;dt&gt;Firefox&lt;/dt&gt;
+            &lt;dd&gt;
+                A free, open source, cross-platform,
+                graphical web browser developed by the
+                Mozilla Corporation and hundreds of
+                volunteers.
+            &lt;/dd&gt;  
+            &lt;!-- Other terms and descriptions --&gt;
+        &lt;/dl&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;ol&gt;</strong></a>
+        <p>Permite definir listas o viñetas ordenadas (“Ordered List”), bien con numeración o alfabéticamente.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;ol&gt;
+            &lt;li&gt;punto uno&lt;/li&gt;
+            &lt;li&gt;punto dos&lt;/li&gt;
+            &lt;li&gt;punto tres&lt;/li&gt;
+        &lt;/ol&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;ul&gt;</strong></a>
+        <p>Crea una lista no ordenada.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;ul&gt;
+            &lt;li&gt;Esto&lt;/li&gt;
+            &lt;li&gt;Lo otro&lt;/li&gt;
+            &lt;li&gt;Lo de más allá&lt;/li&gt;
+        &lt;/ul&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;p&gt;</strong></a>
+        <p>Es el apropiado para distribuir el texto en párrafos.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;p&gt;
+        Esto 
+        es un 
+        párrafo
+        &lt;/p&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;pre&gt;</strong></a>
+        <p>Representa texto preformateado.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;!-- Un poco de codigo CSS --&gt;
+        &lt;pre&gt;
+            body{
+                color:  red;
+            }
+            a   {
+                color:green;
+            }
+        &lt;/pre&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;blockquote&gt;</strong></a>
+        <p>Cita en bloque. Crea citas en bloque, marca las citas a otros autores o documentos.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;blockquote cite="http://html.conclase.net/w3c/html401...def-BLOCKQUOTE"&gt;
+            &lt;p&gt; 
+                &lt;strong&gt;Nota.&lt;/strong&gt; Recomendamos que las implementaciones de hojas
+                de estilo porporcionen un mecanismo para insertar signos de puntuación de citas
+                antes y después de una cita delimitada por un BLOCKQUOTE de un modo apropiado según 
+                el contexto del idioma actual y el grado de anidamiento de las citas. 
+            &lt;/p&gt;
+        &lt;/blockquote&gt;</pre>
+        <h3>Semántica del texto en línea</h3>
+        <p>Utilice la semántica del texto en línea HTML para definir el significado, estructura, o el estilo de una palabra, una línea o cualquier pieza arbitraria de texto.</p>
+        <a style="background-color:whitesmoke;"><strong>&lt;a&gt;</strong></a>
+        <p>El Elemento HTML Anchor &lt;a&gt; crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;a href="https://developer.mozilla.org"&gt;MDN&lt;/a&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;b&gt;</strong></a>
+        <p>Indica que el texto debe ser representado con una variable bold, o negrita, de la tipografía que se esté usando.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;p&gt;
+            Texto normal y... &lt;b&gt;Texto en negrita&lt;/b&gt;
+        &lt;/p&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;strong&gt;</strong></a>
+        <p>El elemento strong es el apropiado para marcar con especial énfasis las partes más importantes de un texto.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;p&gt;
+            &lt;em&gt;El dinero&lt;/em&gt; es importante pero &lt;strong&gt;la salud&lt;/strong&gt; lo es más.
+        &lt;/p&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;br&gt;</strong></a>
+        <p>El elemento HTML line break &lt;br&gt; produce un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de las líneas es significante.</p>
+        <pre style="background-color:whitesmoke;">
+        Mozilla Foundation&lt;br&gt;
+        1981 Landings Drive&lt;br&gt;
+        Building K&lt;br&gt;
+        Mountain View, CA 94043-0801&lt;br&gt;
+        USA</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;em&gt;</strong></a>
+        <p>El elemento HTML &lt;em&gt; es el apropiado para marcar con énfasis las partes importantes de un texto.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;p&gt;
+            &lt;em&gt;El dinero&lt;/em&gt; es importante pero &lt;strong&gt;la salud&lt;/strong&gt; lo es más.
+        &lt;/p&gt;</pre>            
+        <a style="background-color:whitesmoke;"><strong>&lt;i&gt;</strong></a>
+        <p>Muestra el texto marcado con un estilo en cursiva o italica.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;p&gt;
+            Texto normal y... &lt;i&gt;Texto 'inclinado'&lt;/i&gt;
+        &lt;/p&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;span&gt;</strong></a>
+        <p>span - abarcar. Sirve para aplicar estilo al texto o agrupar elementos en línea.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;div style="border: 1px dotted blue;"&gt;
+            &lt;h4&gt;Ejemplo de div y span &lt;/h4&gt;
+            &lt;p&gt;
+                Esto es un párrafo dentro de un div,
+                &lt;span style="color: red;"&gt; y esto un span dentro de un párrafo. &lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;</pre>
+        <h3>Imagen y multimedia</h3>
+        <p>HTML soporta varios recursos multimedia como imágenes, audio, y video.</p>
+        <a style="background-color:whitesmoke;"><strong>&lt;audio&gt;</strong></a>
+        <p>El elemento audio se usa para insertar contenido de audio en un documento HTML o XHTML. El elemento audio se agregó como parte de HTML 5.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg"
+            autoplay&gt;
+            Your browser does not support the &lt;code>audio&lt;/code&gt; element.
+        &lt;/audio&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;img&gt;</strong></a>
+        <p>El elemento de imagen HTML &lt;img&gt; representa una imagen en el documento.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;!-- img element --&gt;
+        &lt;img src="foo" alt="bar"&gt;
 
-<div>
-Sirve para crear secciones o agrupar contenidos.
+        &lt;!-- img element, srcset attribute --&gt;
+        &lt;img srcset="foo-320w.jpg 320w, foo-480w.jpg 480w, foo-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" src="foo-800w.jpg" alt="bar"&gt;
 
-<div style="color: blue;">
- <h2> Ejemplo de div y span </h2>
-  <p>
-    Esto es un párrafo dentro de un div,
-    <span style="color: red;"> y esto un span dentro de un párrafo.</span> 
-  </p>
-</div>
-<h>
-Los elementos de encabezado implementan seis niveles de encabezado del documento, <h1> es el más importante, y <h6>, el menos importante.
-
-<h1>Heading level 1</h1>
-<h2>Heading level 2</h2>
-<h3>Heading level 3</h3>
-<h4>Heading level 4</h4>
-<h5>Heading level 5</h5>
-<h6>Heading level 6</h6>
-<dl>
-Representa una lista descriptiva. El elemento encierra una lista de grupos de términos (especificados con el uso del elemento <dt>) y de descripciones (proveídas con elementos <dd>). Algunos usos comunes para este elemento son implementar un glosario o para desplegar metadatos (lista de pares llave-valor).
-
-<dl>
-  <dt>Firefox</dt>
-  <dd>
-    A free, open source, cross-platform,
-    graphical web browser developed by the
-    Mozilla Corporation and hundreds of
-    volunteers.
-  </dd>
-
-  <!-- Other terms and descriptions -->
-</dl>
-<ol>
-Permite definir listas o viñetas ordenadas (“Ordered List”), bien con numeración o alfabéticamente.
-
-<ol>
- <li>punto uno</li>
- <li>punto dos</li>
- <li>punto tres</li>
-</ol>
-<ul>
-Crea una lista no ordenada.
-
-<ul>
- <li>Esto</li>
- <li>Lo otro</li>
- <li>Lo de más allá</li>
-</ul>
-<p>
-Es el apropiado para distribuir el texto en párrafos.
-
-<p>
-Esto 
-es un 
-párrafo
-</p>
-<pre>
-Representa texto preformateado.
-
-<!-- Un poco de codigo CSS -->
-<pre>
-body{
-  color:  red;
-}
-a   {
-  color:green;
-}
-</pre>
-<blockquote>
-Cita en bloque . Crea citas en bloque, marca las citas a otros autores o documentos.
-
-<blockquote cite="http://html.conclase.net/w3c/html401...def-BLOCKQUOTE">
-  <p> 
-    <strong>Nota.</strong> Recomendamos que las implementaciones de hojas
-    de estilo porporcionen un mecanismo para insertar signos de puntuación de citas
-    antes y después de una cita delimitada por un BLOCKQUOTE de un modo apropiado según 
-    el contexto del idioma actual y el grado de anidamiento de las citas. 
-  </p>
-</blockquote>
-Semántica del texto en línea
-Utilice la semántica del texto en línea HTML para definir el significado, estructura, o el estilo de una palabra, una línea o cualquier pieza arbitraria de texto.
-
-<a>
-El Elemento HTML Anchor <a> crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.
-
-<a href="https://developer.mozilla.org">MDN</a>
-<b>
-Indica que el texto debe ser representado con una variable bold, o negrita, de la tipografía que se esté usando.
-
-<p>
-  Texto normal y... <b>Texto en negrita</b>
-<p>
-<strong>
-El elemento strong es el apropiado para marcar con especial énfasis las partes más importantes de un texto.
-
-<p>
-   <em>El dinero</em> es importante pero <strong>la salud</strong> lo es más.
-</p>
-<br>
-El elemento HTML line break <br> produce un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de las líneas es significante.
-
-Mozilla Foundation<br>
-1981 Landings Drive<br>
-Building K<br>
-Mountain View, CA 94043-0801<br>
-USA
-<em>
-El elemento HTML <em> es el apropiado para marcar con énfasis las partes importantes de un texto.
-
-<p>
-   <em>El dinero</em> es importante pero <strong>la salud</strong> lo es más.
-</p>
-<i>
-Muestra el texto marcado con un estilo en cursiva o italica.
-
-<p>
-     Texto normal y... <i>Texto 'inclinado'</i>
-</p>
-<span>
-span - abarcar. Sirve para aplicar estilo al texto o agrupar elementos en línea.
-
-<div style="border: 1px dotted blue;">
-    <h4>Ejemplo de div y span </h4>
-    <p>
-        Esto es un párrafo dentro de un div,
-        <span style="color: red;"> y esto un span dentro de un párrafo. </span>
-    </p>
-</div>
-Imagen y multimedia
-HTML soporta varios recursos multimedia como imágenes, audio, y video.
-
-<audio>
-El elemento audio se usa para insertar contenido de audio en un documento HTML o XHTML. El elemento audio se agregó como parte de HTML 5.
-
-<audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg"
-       autoplay>
-  Your browser does not support the <code>audio</code> element.
-</audio>
-<img>
-El elemento de imagen HTML <img> representa una imagen en el documento.
-
-<!-- img element -->
-<img src="foo" alt="bar">
-
-<!-- img element, srcset attribute -->
-<img srcset="foo-320w.jpg 320w, foo-480w.jpg 480w, foo-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" src="foo-800w.jpg" alt="bar">
-
-<!-- picture and source elements, srcset attributes -->
-<picture>
-  <source media="(max-width: 799px)" srcset=foo-480w.jpg>
-  <source media="(min-width: 800px)" srcset=foo-800w.jpg>
-  <img src="foo-800w.jpg" alt="bar">
-</picture>
-<video>
-El elemento video se utiliza para incrustar vídeos en un documento HTML o XHTML.
-
-<video src="videofile.ogg" autoplay poster="posterimage.jpg">
-  Tu navegador no admite el elemento <code>video</code>.
-</video>
-Contenido incrustado
-Además de los contenidos multimedia habituales, HTML puede incluir otra variedad de contenidos, aunque no siempre es fácil interactuar con ellos.
-
-<iframe>
-Permite incrustar otra página HTML en la página actual.
-
-<iframe src="https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html" title="iframe Example 1" width="400" height="300">
-  <p>Your browser does not support iframes.</p>
-</iframe>
-Formularios
-<form>
-Representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.
-
-<!-- Formulario con conjunto de campos, leyenda y etiqueta -->
-<form action="" method="post">
-  <fieldset>
-    <legend>Título</legend>
-    <input type="radio" name="radio" id="radio"> <label for="radio">Clic aquí</label>
-  </fieldset>
-</form>
-<fieldset>
-El elemento fieldset permite organizar en grupos los campos de un formulario.
-
-<form>
-    <fieldset>
-        <legend>Información Personal</legend>
-        Nombre: <input name='nombre' type='text' tabindex='1'>
-        Apellidos: <input name='apellidos' type='text' tabindex='2'>
-    </fieldset>
-
-    <fieldset>
-        <legend>edad</legend>
-        <input type='checkbox' tabindex='20' name='edad' value='20-39'> 20-39
-        <input type='checkbox' tabindex='21' name='edad' value='40-59'> 40-59
-        <input type='checkbox' tabindex='22' name='edad' value='60-79'> 60-79
-    </fieldset>
-</form>
-<input>
-Se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario. Hay distintos tipos de input y se definen con el atributo type.
-
-<p>A common form that includes input tags</p>
-<form action="getform.php" method="get">
-    <label>First name: <input type="text"></label><br>
-    <label>Last name: <input type="text"></label><br>
-    <label>E-mail: <input type="email"></label><br>
-    <input type="submit" value="Submit">
-</form>
-<textarea>
-Representa un control para la edición mutilínea de texto sin formato.
-
-<textarea name="textarea" rows="10" cols="50">Write something here</textarea>
-<select>
-Representa un control que muestra un menú de opciones. Las opciones contenidas en el menú son representadas por elementos <option>
-
-<!-- The second value will be selected initially -->
-<select name="select">
-  <option value="value1">Value 1</option> 
-  <option value="value2" selected>Value 2</option>
-  <option value="value3">Value 3</option>
-</select>
+        &lt;!-- picture and source elements, srcset attributes --&gt;
+        &lt;picture&gt;
+            &lt;source media="(max-width: 799px)" srcset=foo-480w.jpg&gt;
+            &lt;source media="(min-width: 800px)" srcset=foo-800w.jpg&gt;
+            &lt;img src="foo-800w.jpg" alt="bar"&gt;
+        &lt;/picture&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;video&gt;</strong></a>
+        <p>El elemento video se utiliza para incrustar vídeos en un documento HTML o XHTML.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;video src="videofile.ogg" autoplay poster="posterimage.jpg"&gt;
+            Tu navegador no admite el elemento &lt;code&gt;video&lt;/code&gt;.
+        &lt;video&gt;</pre>
+        <h3>Contenido incrustado</h3>
+        <p>Además de los contenidos multimedia habituales, HTML puede incluir otra variedad de contenidos, aunque no siempre es fácil interactuar con ellos.</p>
+        <a style="background-color:whitesmoke;"><strong>&lt;iframe&gt;</strong></a>
+        <p>Permite incrustar otra página HTML en la página actual.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;iframe src="https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html" title="iframe Example 1" width="400" height="300"&gt;
+            &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;
+        &lt;/iframe&gt;</pre>
+        <h3>Formularios</h3>
+        <a style="background-color:whitesmoke;"><strong>&lt;form&gt;</strong></a>
+        <p>Representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;!-- Formulario con conjunto de campos, leyenda y etiqueta --&gt;
+        &lt;form action="" method="post"&gt;
+            &lt;fieldset&gt;
+            &lt;legend&gt;Título&lt;/legend&gt;
+            &lt;input type="radio" name="radio" id="radio"&gt; &lt;label for="radio"&gt;Clic aquí&lt;/label&gt;
+            &lt;/fieldset&gt;
+        &lt;/form&gt;</pre>      
+        <a style="background-color:whitesmoke;"><strong>&lt;fieldset&gt;</strong></a>
+        <p>El elemento fieldset permite organizar en grupos los campos de un formulario.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;form&gt;
+            &lt;fieldset&gt;
+                &lt;legend&gt;Información Personal&lt;/legend&gt;
+                Nombre: &lt;input name='nombre' type='text' tabindex='1'&gt;
+                Apellidos: &lt;input name='apellidos' type='text' tabindex='2'&gt;
+            &lt;/fieldset&gt;
+        
+            &lt;fieldset&gt;
+                &lt;legend&gt;edad&lt;/legend&gt;
+                &lt;input type='checkbox' tabindex='20' name='edad' value='20-39'&gt; 20-39
+                &lt;input type='checkbox' tabindex='21' name='edad' value='40-59'&gt; 40-59
+                &lt;input type='checkbox' tabindex='22' name='edad' value='60-79'&gt; 60-79
+            &lt;/fieldset&gt;
+        &lt;/form&gt;</pre> 
+        <a style="background-color:whitesmoke;"><strong>&lt;input&gt;</strong></a>
+        <p>Se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario. Hay distintos tipos de input y se definen con el atributo type.</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;p&gt;A common form that includes input tags&lt;/p&gt;
+        &lt;form action="getform.php" method="get"&gt;
+            &lt;label&gt;First name: &lt;input type="text"&gt;&lt;/label&gt;&lt;br&gt;
+            &lt;label&gt;Last name: &lt;input type="text"&gt;&lt;/label&gt;&lt;br&gt;
+            &lt;label&gt;E-mail: &lt;input type="email"&gt;&lt;/label&gt;&lt;br&gt;
+            &lt;input type="submit" value="Submit"&gt;
+        &lt;/form&gt;</pre>     
+        <a style="background-color:whitesmoke;"><strong>&lt;textarea&gt;</strong></a>
+        <p>Representa un control para la edición mutilínea de texto sin formato.</p>
+        <pre style="background-color:whitesmoke;">
+            &lt;textarea name="textarea" rows="10" cols="50"&gt;Write something here&lt;/textarea&gt;</pre>
+        <a style="background-color:whitesmoke;"><strong>&lt;select&gt;</strong></a>
+        <p>Representa un control que muestra un menú de opciones. Las opciones contenidas en el menú son representadas por elementos &lt;option&gt;</p>
+        <pre style="background-color:whitesmoke;">
+        &lt;!-- The second value will be selected initially --&gt;
+        &lt;select name="select"&gt;
+            &lt;option value="value1"&gt;Value 1&lt;/option&gt; 
+            &lt;option value="value2" selected&gt;Value 2&lt;/option&gt;
+            &lt;option value="value3"&gt;Value 3&lt;/option&gt;
+        &lt;/select&gt;</pre>     
+    </main>
+    <footer>
+        <p>© 2021 All rights reserved.</p>
+    </footer>
+</body>
+</html>
